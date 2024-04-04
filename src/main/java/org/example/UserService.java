@@ -1,18 +1,14 @@
 package org.example;
-
 public class UserService {
     private final UtilisateurApi utilisateurApi;
     public UserService(UtilisateurApi utilisateurApi)
     {
         this.utilisateurApi = utilisateurApi;
     }
-    public void creerUtilisateur(Utilisateur utilisateur) throws ServiceException
-    {
+    public void creerUtilisateur(Utilisateur utilisateur) throws ServiceException {
         utilisateurApi.creerUtilisateur(utilisateur);
     }
-}
-public interface UtilisateurApi
-{
-    void creerUtilisateur(Utilisateur utilisateur) throws ServiceException;
+
+
 }
 
